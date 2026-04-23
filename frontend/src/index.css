@@ -379,7 +379,7 @@ tbody tr:last-child td { border-bottom: none; }
 
 /* ─── Responsive & Mobile Overrides ──────────────────────────── */
 @media (max-width: 900px) {
-  .nav-links-desktop a span:last-child {
+  .nav-label {
     display: none; /* Hide text, show only icons for nav links */
   }
 }
@@ -394,7 +394,7 @@ tbody tr:last-child td { border-bottom: none; }
   .nav-links-desktop a { padding: 8px !important; }
   
   /* Admin / User Sidebar overrides (handles inline css) */
-  [style*="width: 240px"] {
+  [style*="width: 240px"], [style*="width:240px"] {
     position: fixed !important;
     height: calc(100vh - 64px) !important;
     box-shadow: 10px 0 30px rgba(0,0,0,0.5) !important;
@@ -402,7 +402,7 @@ tbody tr:last-child td { border-bottom: none; }
   }
   
   /* When sidebar is closed (68px), just show icons and minimal width */
-  [style*="width: 68px"] {
+  [style*="width: 68px"], [style*="width:68px"] {
     position: fixed !important;
     height: calc(100vh - 64px) !important;
     z-index: 1000 !important;
@@ -450,7 +450,7 @@ tbody tr:last-child td { border-bottom: none; }
   
   /* If Sidebar is collapsed on a tiny screen, we can actually move it to bottom 
      or just strictly hide text and keep it 50px */
-  [style*="width: 68px"] {
+  [style*="width: 68px"], [style*="width:68px"] {
     width: 50px !important;
   }
   main[style*="flex: 1"] {

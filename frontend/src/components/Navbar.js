@@ -189,7 +189,7 @@ const Navbar = () => {
               }}
             >
               <span>{link.icon}</span>
-              {link.label}
+              <span className="nav-label">{link.label}</span>
             </Link>
           ))}
         </div>
