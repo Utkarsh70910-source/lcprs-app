@@ -194,7 +194,7 @@ const Dashboard = () => {
               display: viewMode === 'grid'
                 ? 'grid'
                 : 'flex',
-              gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(320px, 1fr))' : undefined,
+              gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(250px, 1fr))' : undefined,
               flexDirection: viewMode === 'list' ? 'column' : undefined,
               gap: 16,
             }}

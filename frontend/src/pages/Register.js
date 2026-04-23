@@ -127,7 +127,7 @@ const Register = () => {
           </div>
 
           {/* Password row */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+          <div className=\"responsive-grid-2\" style={{ gap: 16 }}>
             <div className="form-group">
               <label className="form-label">Password *</label>
               <div style={{ position: 'relative' }}>
@@ -170,7 +170,7 @@ const Register = () => {
           </div>
 
           {/* Phone & Zone */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+          <div className=\"responsive-grid-2\" style={{ gap: 16 }}>
             <div className="form-group">
               <label className="form-label">Phone (optional)</label>
               <input

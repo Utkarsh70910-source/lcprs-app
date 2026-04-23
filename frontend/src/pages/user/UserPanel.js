@@ -309,7 +309,7 @@ const UserPanel = () => {
       <div style={{...S.card,padding:28,marginBottom:20}}>
         <h4 style={{fontSize:14,fontWeight:600,color:'var(--text-primary)',marginBottom:20}}>Personal Information</h4>
         <form onSubmit={saveProfile}>
-          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16}}>
+          <div className=\"responsive-grid-2\" style={{gap:16}}>
             <div style={S.formGroup}>
               <label style={S.label}>Full Name *</label>
               <input className="form-input" value={form.name}

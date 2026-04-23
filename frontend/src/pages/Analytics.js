@@ -110,7 +110,7 @@ const Analytics = () => {
       </div>
 
       {/* Charts Row */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 20 }}>
+      <div className=\"responsive-grid-2\" style={{ gap: 20, marginBottom: 20 }}>
         {/* Bar Chart */}
         <div className="card">
           <div style={{ marginBottom: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -129,7 +129,7 @@ const Analytics = () => {
       </div>
 
       {/* Heatmap + Resolution Time */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 20 }}>
+      <div className=\"responsive-grid-2\" style={{ gap: 20, marginBottom: 20 }}>
         {/* Live Heatmap */}
         <div className="card">
           <div style={{ marginBottom: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

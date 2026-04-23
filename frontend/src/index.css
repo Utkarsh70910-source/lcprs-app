@@ -188,6 +188,10 @@ p { color: var(--text-secondary); line-height: 1.7; }
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+.responsive-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .form-group {
   display: flex;
   flex-direction: column;
@@ -438,6 +442,10 @@ tbody tr:last-child td { border-bottom: none; }
   
   .category-grid {
     grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .responsive-grid-2 {
+    grid-template-columns: 1fr !important;
   }
   
   /* Adjust KPI Grid in Admin Dashboard */
