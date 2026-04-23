@@ -177,6 +177,17 @@ p { color: var(--text-secondary); line-height: 1.7; }
 .btn-full { width: 100%; justify-content: center; }
 
 /* ─── Form Elements ──────────────────────────────────────────── */
+.submit-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+  align-items: start;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
 .form-group {
   display: flex;
   flex-direction: column;
@@ -417,13 +428,17 @@ tbody tr:last-child td { border-bottom: none; }
   }
 
   /* Form columns */
-  .profile-form-grid, .settings-form-grid {
+  .profile-form-grid, .settings-form-grid, .submit-form-grid {
     grid-template-columns: 1fr !important;
   }
 }
 
 @media (max-width: 600px) {
   .stats-grid { grid-template-columns: 1fr; }
+  
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
   
   /* Adjust KPI Grid in Admin Dashboard */
   [style*="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))"] {

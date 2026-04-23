@@ -179,7 +179,7 @@ const SubmitReport = () => {
       </div>
 
       <form onSubmit={handleSubmit}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 24, alignItems: 'start' }}>
+        <div className="submit-form-grid">
           {/* Main form area */}
           <div>
             {/* Step 1: Details */}
@@ -214,7 +214,7 @@ const SubmitReport = () => {
 
                 <div className="form-group">
                   <label className="form-label">Category *</label>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
+                  <div className="category-grid">
                     {CATEGORIES.map((cat) => (
                       <button
                         key={cat.value}
