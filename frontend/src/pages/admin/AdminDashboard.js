@@ -593,7 +593,7 @@ const AdminDashboard = () => {
           }} onClick={e=>e.stopPropagation()}>
             <h3 style={{fontSize:18, fontWeight:700, marginBottom:20}}>Create User Account</h3>
             <form onSubmit={handleCreateUser} style={{display:'flex', flexDirection:'column', gap:14}}>
-              <div className=\"responsive-grid-2\" style={{ gap:14}}>
+              <div className="responsive-grid-2" style={{ gap:14}}>
                 <div>
                   <label className="form-label" style={{marginBottom:4,display:'block'}}>Full Name</label>
                   <input name="name" className="form-input" required />
@@ -611,7 +611,7 @@ const AdminDashboard = () => {
                   <option value="admin">System Admin</option>
                 </select>
               </div>
-              <div className=\"responsive-grid-2\" style={{ gap:14}}>
+              <div className="responsive-grid-2" style={{ gap:14}}>
                 <div>
                   <label className="form-label" style={{marginBottom:4,display:'block'}}>Password</label>
                   <input type="text" name="password" className="form-input" placeholder="CivicAlert123!" />
@@ -657,7 +657,7 @@ const AdminDashboard = () => {
             No analytics data available
           </div>
         ) : (
-          <div className=\"responsive-grid-2\" style={{gap:20}}>
+          <div className="responsive-grid-2" style={{gap:20}}>
             {/* By Status bar chart */}
             <div style={{...S.card,padding:24}}>
               <h3 style={{fontSize:14,fontWeight:600,color:'var(--text-primary)',marginBottom:20}}>Reports by Status</h3>
